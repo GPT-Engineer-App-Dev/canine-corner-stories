@@ -30,8 +30,8 @@ const Index = () => {
   const [selectedBreed, setSelectedBreed] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <h1 className="text-4xl font-bold mb-8 text-center">Discover Dog Breeds</h1>
+    <div className="min-h-screen bg-gray-200 p-8">
+      <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">Discover Dog Breeds</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {dogBreeds.map((breed, index) => (
           <Card key={index} className="cursor-pointer hover:shadow-lg transition-shadow" onClick={() => setSelectedBreed(breed)}>
