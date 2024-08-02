@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Paw } from "lucide-react";
+import { PawPrint } from "lucide-react";
 
 const dogBreeds = [
   {
@@ -55,7 +55,7 @@ const Index = () => {
               <img src={selectedBreed.image} alt={selectedBreed.name} className="w-full h-64 object-cover rounded-md mb-4" />
               <p className="text-lg mb-4">{selectedBreed.description}</p>
               <Button onClick={() => setSelectedBreed(null)}>
-                <Paw className="mr-2 h-4 w-4" /> Close
+                <PawPrint className="mr-2 h-4 w-4" /> Close
               </Button>
             </CardContent>
           </Card>
